@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22a15b33-9361-4978-b368-f1e734e92420" name="Default Changelist" comment="" />
+    <list default="true" id="22a15b33-9361-4978-b368-f1e734e92420" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ArraySol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinarySum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTreeAsArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTreeTraversal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoublyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvalExpressionTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpressionTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GFG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterBit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedListProb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QueueAsArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QueueAsLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StackAsLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StringSubset.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tst.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1638428758891" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/practice" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
