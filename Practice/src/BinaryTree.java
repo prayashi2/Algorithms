@@ -3,24 +3,24 @@ import java.util.LinkedList;
 
 public class BinaryTree {
 
-    static Node root;
+    static BinaryTreeNode root;
 
-    static class Node {
+    static class BinaryTreeNode {
         int data;
-        Node left,right;
+        BinaryTreeNode left,right;
 
-        Node(int d) {
+        BinaryTreeNode(int d) {
             data=d;
             left=right=null;
         }
     }
 
     public static void main(String args[]) {
-        root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(3);
-        root.left.left = new Node(4);
-        root.right.right = new Node(5);
+        root = new BinaryTreeNode(1);
+        root.left = new BinaryTreeNode(2);
+        root.right = new BinaryTreeNode(3);
+        root.left.left = new BinaryTreeNode(4);
+        root.right.right = new BinaryTreeNode(5);
         System.out.println("Inorder Traversal");
         inorder(root);
         insert(root,6);
@@ -39,35 +39,35 @@ public class BinaryTree {
 
     }
 
-    public static void inorder(Node root) {
+    public static void inorder(BinaryTreeNode root) {
         if(root==null) return;
         inorder(root.left);
         System.out.print(root.data + " ");
         inorder(root.right);
     }
 
-    public static void preorder(Node root) {
+    public static void preorder(BinaryTreeNode root) {
         if(root==null) return;
         System.out.print(root.data + " ");
         preorder(root.left);
         preorder(root.right);
     }
 
-    public static void postorder(Node root) {
+    public static void postorder(BinaryTreeNode root) {
         if(root==null) return;
         postorder(root.left);
         postorder(root.right);
         System.out.print(root.data + " ");
     }
 
-    public static void insert(Node root, int data) {
+    public static void insert(BinaryTreeNode root, int data) {
         if(root==null) {
-            root = new Node(data);
+            root = new BinaryTreeNode(data);
             return;
         }
-        Queue<Node> q = new LinkedList<Node>();
+        Queue<BinaryTreeNode> q = new LinkedList<BinaryTreeNode>();
         q.add(root);
-        Node newNode = new Node(data);
+        BinaryTreeNode newNode = new BinaryTreeNode(data);
         while(!q.isEmpty()) {
             root=q.poll();
             if(root.left==null) {
@@ -84,15 +84,15 @@ public class BinaryTree {
         }
     }
 
-    public static void delete(Node root, int data) {
+    public static void delete(BinaryTreeNode root, int data) {
         if(root == null) return;
         if(root.left==null && root.right==null) {
             if(root.data==data) root=null;
             return;
         }
-        Queue<Node> q = new LinkedList();
+        Queue<BinaryTreeNode> q = new LinkedList();
         q.add(root);
-        Node temp=null, keyNode=null;
+        BinaryTreeNode temp=null, keyNode=null;
         while (!q.isEmpty()) {
             temp = q.poll();
             if(temp.data==data) keyNode=temp;
@@ -107,10 +107,10 @@ public class BinaryTree {
         }
     }
 
-    public static void deleteDeepest(Node root, Node del) {
-        Queue<Node> q = new LinkedList();
+    public static void deleteDeepest(BinaryTreeNode root, BinaryTreeNode del) {
+        Queue<BinaryTreeNode> q = new LinkedList();
         q.add(root);
-        Node temp=null;
+        BinaryTreeNode temp=null;
         while (!q.isEmpty()) {
             temp = q.poll();
             if(temp==del) {

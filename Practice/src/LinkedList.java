@@ -3,12 +3,12 @@ import java.util.List;
 
 public class LinkedList {
 
-    Node head;
+    Node1 head;
 
-    public static class Node {
+    public static class Node1 {
         int data;
-        Node next;
-        Node(int d) {
+        Node1 next;
+        Node1(int d) {
             data=d;
             next=null;
         }
@@ -16,7 +16,7 @@ public class LinkedList {
 
     public void print() {
 
-        Node n = head;
+        Node1 n = head;
         while(n!=null) {
             System.out.print(n.data);
             n=n.next;
@@ -28,10 +28,10 @@ public class LinkedList {
 
         LinkedList l = new LinkedList();
 
-        l.head = new Node(1);
-        Node n2 = new Node(2);
-        Node n3 = new Node(4);
-        Node n4 = new Node(5);
+        l.head = new Node1(1);
+        Node1 n2 = new Node1(2);
+        Node1 n3 = new Node1(4);
+        Node1 n4 = new Node1(5);
         l.head.next=n2;
         n2.next=n3;
         n3.next=n4;
@@ -45,53 +45,53 @@ public class LinkedList {
         l.insertBefore(n4,7);
         l.print();
         l.delete(6);
-        //l.deleteNode(n2);
+        //l.deleteNode1(n2);
         l.print();
         //System.out.println(l.hasCycle(l.head));
 
     }
 
     void push (int data) {
-        Node newNode = new Node(data);
-        newNode.next= head;
-        head = newNode;
+        Node1 newNode1 = new Node1(data);
+        newNode1.next= head;
+        head = newNode1;
     }
 
-    void insertAfter(Node prev, int data) {
+    void insertAfter(Node1 prev, int data) {
 
         if(prev==null) System.out.println("Previous cannot be null");
-        Node newNode = new Node(data);
-        newNode.next= prev.next;
-        prev.next=newNode;
+        Node1 newNode1 = new Node1(data);
+        newNode1.next= prev.next;
+        prev.next=newNode1;
     }
 
     void append(int data) {
-        Node newNode = new Node(data);
+        Node1 newNode1 = new Node1(data);
         if(head == null) {
-            head=newNode;
+            head=newNode1;
             return;
         }
-        Node last = head;
+        Node1 last = head;
         while(last.next!=null) last=last.next;
-        last.next=newNode;
+        last.next=newNode1;
         return;
     }
 
-    void insertBefore(Node curr, int data) {
+    void insertBefore(Node1 curr, int data) {
 
         if(curr==null) System.out.println("Current cannot be null");
-        Node newNode = new Node(data);
-        Node prev = head;
+        Node1 newNode1 = new Node1(data);
+        Node1 prev = head;
         while(prev.next!=curr) prev=prev.next;
-        newNode.next=curr;
-        prev.next=newNode;
+        newNode1.next=curr;
+        prev.next=newNode1;
 
 
     }
 
-    void reverse(Node head) {
-        Node prev = head;
-        Node curr,temp;
+    void reverse(Node1 head) {
+        Node1 prev = head;
+        Node1 curr,temp;
         while(prev.next.next!=null) {
             curr = prev.next;
             temp = curr.next;
@@ -102,8 +102,8 @@ public class LinkedList {
     }
 
     void delete(int key) {
-        Node temp = head;
-        Node prev=null;
+        Node1 temp = head;
+        Node1 prev=null;
         if(temp!= null && temp.data==key) {
             head=temp.next;
             return;
@@ -117,13 +117,13 @@ public class LinkedList {
 
     }
 
-    void deleteNode(Node newNode) {
-        newNode.data=newNode.next.data;
-        newNode.next=newNode.next.next;
+    void deleteNode1(Node1 newNode1) {
+        newNode1.data=newNode1.next.data;
+        newNode1.next=newNode1.next.next;
 
     }
 
-    public boolean hasCycle(Node head) {
+    public boolean hasCycle(Node1 head) {
         List map = new ArrayList();
         while(head!=null){
             if(map.contains(head)) return true;

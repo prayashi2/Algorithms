@@ -1,0 +1,21 @@
+
+H
+java:S1068	"+Remove this unused "players" private field.(½Æ‹Þ8á×ÙÓý/
+Y
+java:S1068"7Remove this unused "snakeAndLadderBoard" private field.(ø”çúüÿÿÿÿ8±èÖÓý/
+X
+java:S1068"6Remove this unused "DEFAULT_BOARD_SIZE" private field.(†îèñùÿÿÿÿ8Â†²Ôý/
+\
+java:S1068":Remove this unused "initialNumberOfPlayers" private field.(–Û‚·ûÿÿÿÿ8»õ×Óý/
+O
+java:S1068"-Remove this unused "noOfDices" private field.(Í•¥ñúÿÿÿÿ8ïó¬Ôý/
+a
+java:S1068"DRemove this unused "shouldGameContinueTillLastPlayer" private field.(×Î¯¾8ïó¬Ôý/
+a
+java:S1068"DRemove this unused "shouldAllowMultipleDiceRollOnSix" private field.(ËàŸÐ8ÖØ®Ôý/
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡¸Ó
+U
+java:S1068
+"3Remove this unused "isGameCompleted" private field.(·´Ýóþÿÿÿÿ8¸ú£Ôý/
+T
+java:S1068"7Remove this unused "DEFAULT_NO_OF_DICES" private field.(ÞÆ´ˆ8Â†²Ôý/
